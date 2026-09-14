@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 220" width="100%" height="100%">
+  <!-- Cute Ergonomic Mouse in Pastel Tones -->
+  <defs>
+    <filter id="mouse-shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#1d4d6e" flood-opacity="0.12"/>
+    </filter>
+    <linearGradient id="mouse-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#edf6fc"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Sombra base -->
+  <path d="M 35,60 C 35,20 125,20 125,60 C 125,145 125,185 80,185 C 35,185 35,145 35,60 Z" fill="#bde0fe" opacity="0.4" transform="translate(0, 8)" />
+  
+  <!-- Cuerpo del mouse -->
+  <path d="M 35,60 C 35,22 125,22 125,60 C 125,145 125,185 80,185 C 35,185 35,145 35,60 Z" 
+        fill="url(#mouse-grad)" 
+        stroke="#9cd4f4" 
+        stroke-width="5" 
+        stroke-linejoin="round"
+        filter="url(#mouse-shadow)" />
+
+  <!-- Línea divisoria de botones superiores -->
+  <path d="M 80,24 L 80,82" stroke="#9cd4f4" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 36,82 C 55,85 105,85 124,82" stroke="#9cd4f4" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Scroll Wheel -->
+  <rect x="74" y="42" width="12" height="24" rx="6" fill="#fed976" stroke="#e0aa3e" stroke-width="3"/>
+  <line x1="77" y1="50" x2="83" y2="50" stroke="#b87a0e" stroke-width="2" stroke-linecap="round"/>
+  <line x1="77" y1="56" x2="83" y2="56" stroke="#b87a0e" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Acento pastel en el lateral -->
+  <path d="M 37,110 C 39,150 48,170 70,182" fill="none" stroke="#fed976" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Brillo sutil -->
+  <ellipse cx="55" cy="45" rx="6" ry="12" fill="#ffffff" opacity="0.8" transform="rotate(-20 55 45)"/>
+</svg>

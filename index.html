@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camila Carolina Ianni · Desarrolladora Web Front-End & Diseñadora</title>
+  <meta name="description" content="Portafolio oficial de Camila Carolina Ianni, Desarrolladora Front-End formada en la Escuela Da Vinci. Diseño y desarrollo de páginas web, catálogos y tiendas online a precios accesibles y sin comisiones por venta.">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="assets/icons/flower.svg">
+  
+  <!-- Estilos Principales Pastel Tech -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Fondos y Decoraciones de Estrellas Flotantes (Rosa y Celeste) -->
+  <div class="decorations-bg" aria-hidden="true">
+    <div class="star-decor star-1"><img src="assets/images/star-badge.svg" alt="" width="44" height="44"></div>
+    <div class="star-decor star-2"><img src="assets/images/star-badge.svg" alt="" width="50" height="50"></div>
+    <div class="star-decor star-3"><img src="assets/images/star-badge.svg" alt="" width="38" height="38"></div>
+    <div class="star-decor star-4"><img src="assets/images/star-badge.svg" alt="" width="46" height="46"></div>
+    <span class="sparkle sparkle-1">✦</span>
+    <span class="sparkle sparkle-2">✦</span>
+    <span class="sparkle sparkle-3">✦</span>
+    <span class="sparkle sparkle-4">✦</span>
+  </div>
+
+  <!-- Barra de Navegación Pastel Responsive -->
+  <header class="header-nav">
+    <div class="container nav-wrapper">
+      <a href="#sobre-mi" class="brand-logo" aria-label="Ir a inicio del portafolio">
+        <div class="brand-badge">
+          <span class="brand-icon"><img src="assets/icons/flower.svg" class="icon-svg" alt=""></span>
+          <span class="brand-name">Camila Ianni</span>
+          <span class="brand-tag">Front-End</span>
+        </div>
+      </a>
+
+      <!-- Enlaces para Desktop -->
+      <nav class="desktop-nav">
+        <ul class="nav-links">
+          <li><a href="#sobre-mi" class="nav-link">Sobre Mí</a></li>
+          <li><a href="#servicios-web" class="nav-link">Servicios</a></li>
+          <li><a href="#caso-lydam" class="nav-link">LYDAM</a></li>
+          <li><a href="#ventajas" class="nav-link">0% Comisiones</a></li>
+          <li><a href="#etapas" class="nav-link">Etapas</a></li>
+          <li><a href="#que-incluye" class="nav-link">Módulos</a></li>
+          <li><a href="#cotizador" class="nav-link">Cotizador</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- Botón WhatsApp Navbar (Desktop / Tablet) -->
+      <div class="nav-actions">
+        <a href="https://wa.me/5191178189881?text=%C2%A1Hola%20Camila!%20Vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20consultarte%20por%20una%20web%20para%20mi%20negocio." 
+           class="nav-cta-btn js-whatsapp-direct" 
+           target="_blank" 
+           rel="noopener">
+          <img src="assets/icons/whatsapp.svg" class="icon-svg" alt=""> <span>WhatsApp</span>
+        </a>
+
+        <!-- Botón Hamburguesa para Móvil y Tablets -->
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Abrir menú de navegación"><img src="assets/icons/hamburger.svg" class="icon-svg" alt=""></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Overlay de Fondo para Menú Móvil -->
+  <div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
+
+  <!-- Menú Drawer Lateral para Móvil y Tablets -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer" aria-hidden="true">
+    <div class="mobile-drawer-header">
+      <div class="brand-badge" style="box-shadow: none;">
+        <span class="brand-icon"><img src="assets/icons/flower.svg" class="icon-svg" alt=""></span>
+        <span class="brand-name" style="font-size: 1.15rem;">Camila Ianni</span>
+      </div>
+      <button class="mobile-drawer-close" id="mobileDrawerClose" aria-label="Cerrar menú"><img src="assets/icons/close.svg" class="icon-svg" alt=""></button>
+    </div>
+
+    <ul class="mobile-nav-links">
+      <li><a href="#sobre-mi" class="mobile-nav-link"><img src="assets/icons/flower.svg" class="icon-svg" alt=""> Sobre Mí & Da Vinci</a></li>
+      <li><a href="#servicios-web" class="mobile-nav-link"><img src="assets/icons/laptop.svg" class="icon-svg" alt=""> Servicios Web</a></li>
+      <li><a href="#caso-lydam" class="mobile-nav-link"><img src="assets/icons/dress.svg" class="icon-svg" alt=""> Caso de Éxito LYDAM</a></li>
+      <li><a href="#ventajas" class="mobile-nav-link"><img src="assets/icons/coin.svg" class="icon-svg" alt=""> 0% Comisiones</a></li>
+      <li><a href="#etapas" class="mobile-nav-link"><img src="assets/icons/clipboard.svg" class="icon-svg" alt=""> Etapas de Trabajo</a></li>
+      <li><a href="#que-incluye" class="mobile-nav-link"><img src="assets/icons/box.svg" class="icon-svg" alt=""> Módulos de tu Web</a></li>
+      <li><a href="#cotizador" class="mobile-nav-link"><img src="assets/icons/sparkles.svg" class="icon-svg" alt=""> Cotizador Online</a></li>
+      <li><a href="#contacto" class="mobile-nav-link"><img src="assets/icons/chat.svg" class="icon-svg" alt=""> Contacto Directo</a></li>
+    </ul>
+
+    <div class="mobile-drawer-footer">
+      <a href="https://wa.me/5191178189881?text=%C2%A1Hola%20Camila!%20Quiero%20consultarte%20por%20una%20web%20para%20mi%20negocio." 
+         class="btn btn-primary js-whatsapp-direct" 
+         target="_blank" 
+         rel="noopener" 
+         style="width: 100%; font-size: 1rem; padding: 12px 18px;">
+        <img src="assets/icons/whatsapp.svg" class="icon-svg" alt=""> Hablar por WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       1. SECCIÓN PRINCIPAL: INFORMACIÓN DE CAMILA CAROLINA IANNI
+       (Primero que todo: Quién es, qué hace, Da Vinci y precios accesibles)
+       ======================================================================== -->
+  <section class="about-hero-section" id="sobre-mi">
+    <div class="container">
+      <div class="about-main-card">
+        <div class="about-window-header">
+          <div class="window-controls-pills">
+            <span class="pill-ctrl pink-pill"></span>
+            <span class="pill-ctrl"></span>
+            <span class="pill-ctrl pink-pill"></span>
+          </div>
+          <div class="window-title">
+            <img src="assets/icons/flower.svg" class="icon-svg" alt=""> camila-ianni-perfil.info
+          </div>
+        </div>
+
+        <div class="about-body-grid">
+          <!-- Columna Izquierda: Información de Camila -->
+          <div class="about-text-content">
+            <span class="about-name-pill">
+              <img src="assets/icons/sparkles.svg" class="icon-svg" alt=""> Desarrolladora Front-End · Da Vinci
+            </span>
+
+            <h1 class="about-title">
+              ¡Hola! Soy <span>Camila Carolina Ianni</span>
+            </h1>
+
+            <div class="about-highlight-box">
+              Soy <strong>desarrolladora web</strong> y estudio en la <strong>Escuela Da Vinci</strong> (Primera Escuela de Arte Multimedial de Buenos Aires), con <strong>384 horas de formación oficial</strong> en tecnologías web modernas.
+              <br><br>
+              Mi propósito es crear <strong>páginas web hermosas, veloces y vendedoras</strong> a <strong>precios realmente accesibles</strong> para emprendimientos, marcas y comercios que quieren crecer sin pagar comisiones abusivas.
+            </div>
+
+            <div class="about-skills-title">Tecnologías y Especialidades:</div>
+            <div class="skills-pill-wrap">
+              <span class="skill-badge pink"><img src="assets/icons/globe.svg" class="icon-svg" alt=""> HTML5 Semántico</span>
+              <span class="skill-badge"><img src="assets/icons/palette.svg" class="icon-svg" alt=""> CSS3 & Responsive</span>
+              <span class="skill-badge pink"><img src="assets/icons/lightning.svg" class="icon-svg" alt=""> JavaScript</span>
+              <span class="skill-badge yellow"><img src="assets/icons/ruler.svg" class="icon-svg" alt=""> Bootstrap</span>
+              <span class="skill-badge"><img src="assets/icons/php.svg" class="icon-svg" alt=""> PHP & MySQL</span>
+              <span class="skill-badge pink"><img src="assets/icons/sparkles.svg" class="icon-svg" alt=""> UX / UI Design</span>
+              <span class="skill-badge yellow"><img src="assets/icons/brush.svg" class="icon-svg" alt=""> Adobe Photoshop</span>
+              <span class="skill-badge"><img src="assets/icons/github.svg" class="icon-svg" alt=""> Git & GitHub</span>
+              <span class="skill-badge pink"><img src="assets/icons/phone.svg" class="icon-svg" alt=""> Mobile-First</span>
+            </div>
+
+            <div class="about-actions">
+              <a href="https://wa.me/5191178189881?text=%C2%A1Hola%20Camila!%20Estuve%20viendo%20tu%20perfil%20y%20me%20gustar%C3%ADa%20hacerte%20una%20consulta%20por%20una%20web." 
+                 class="btn btn-primary js-whatsapp-direct" 
+                 target="_blank" 
+                 rel="noopener">
+                <img src="assets/icons/whatsapp.svg" class="icon-svg" alt=""> Escribime al WhatsApp
+              </a>
+              <button class="btn btn-pink" id="diplomaModalTrigger">
+                <img src="assets/icons/diploma.svg" class="icon-svg" alt=""> Ver Diploma Da Vinci
+              </button>
+              <a href="#servicios-web" class="btn btn-blue">
+                <img src="assets/icons/laptop.svg" class="icon-svg" alt=""> Ver Servicios Web
+              </a>
+            </div>
+          </div>
+
+          <!-- Columna Derecha: Tarjeta con el Certificado Da Vinci -->
+          <div class="about-cert-column">
+            <div class="davinci-certificate-card">
+              <div class="cert-card-header">
+                <span class="cert-card-title"><img src="assets/icons/diploma.svg" class="icon-svg" alt=""> Certificación Oficial Da Vinci</span>
+                <span style="font-size: 0.8rem; font-weight: 700; color: #922641;">384 Horas</span>
+              </div>
+              <div class="cert-img-container" onclick="document.getElementById('diplomaModalTrigger').click()">
+                <img src="assets/images/diploma_davinci.png" alt="Certificado Da Vinci Desarrollador Front-End Camila Carolina Ianni" class="cert-img">
+                <div class="cert-hover-overlay">
+                  <span class="cert-zoom-pill"><img src="assets/icons/search.svg" class="icon-svg" alt=""> Ampliar Certificado</span>
+                </div>
+              </div>
+              <div class="cert-card-footer">
+                <div class="cert-school-name">
+                  <img src="assets/icons/school.svg" class="icon-svg" alt=""> Escuela Da Vinci · Buenos Aires
+                </div>
+                <div style="margin-top: 4px; font-size: 0.85rem; color: var(--text-muted);">
+                  Desarrollador Front-End: HTML5, CSS3, Bootstrap, jQuery, JAVA, PHP, MySQL, UX y Photoshop.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       2. HERO DE SERVICIOS WEB (Recreación exacta del Slide 1 de la presentación)
+       ======================================================================== -->
+  <section class="services-hero-section" id="servicios-web">
+    <div class="container">
+      <div class="services-main-window">
+        <!-- Cabecera de Ventana Celeste y Rosa -->
+        <div class="services-window-header">
+          <div class="window-controls-pills">
+            <span class="pill-ctrl"></span>
+            <span class="pill-ctrl"></span>
+            <span class="pill-ctrl"></span>
+          </div>
+          <div class="window-title">
+            <img src="assets/icons/laptop.svg" class="icon-svg" alt=""> desarrollo-de-paginas-web.studio
+          </div>
+        </div>
+
+        <!-- Cuerpo de la Ventana con Franjas Diagonales y Elementos de Diapositiva -->
+        <div class="services-window-body">
+          <h2 class="services-title">
+            Diseño y desarrollo de<br>páginas web
+          </h2>
+
+          <div>
+            <span class="services-subbanner-pill">
+              El próximo paso para tu negocio…
+            </span>
+          </div>
+
+          <p class="services-description">
+            Ayudo a comercios, marcas y emprendedores a tener su propio sitio web o catálogo profesional. 
+            <strong>0% comisiones por tus ventas</strong>, precios realmente accesibles y tu página web lista en <strong>menos de una semana</strong>.
+          </p>
+
+          <div class="services-actions">
+            <a href="#cotizador" class="btn btn-primary">
+              <img src="assets/icons/rocket.svg" class="icon-svg" alt=""> Cotizá tu Web Gratis
+            </a>
+            <a href="#caso-lydam" class="btn btn-pink">
+              <img src="assets/icons/dress.svg" class="icon-svg" alt=""> Ver Caso de Éxito (LYDAM)
+            </a>
+            <a href="https://wa.me/5191178189881?text=%C2%A1Hola%20Camila!%20Quisiera%20pedirte%20un%20presupuesto%20para%20la%20web%20de%20mi%20negocio." 
+               class="btn btn-yellow js-whatsapp-direct" 
+               target="_blank" 
+               rel="noopener">
+              <img src="assets/icons/whatsapp.svg" class="icon-svg" alt=""> Consulta Rápida por WhatsApp
+            </a>
+          </div>
+
+          <!-- Grilla de Ventajas Clave del Hero -->
+          <div class="hero-highlights-grid">
+            <div class="hero-highlight-item">
+              <span class="icon"><img src="assets/icons/coin.svg" class="icon-svg" alt=""></span>
+              <div class="title">0% Comisiones</div>
+              <div class="desc">Un solo pago único y accesible. Toda la ganancia de tus ventas es tuya.</div>
+            </div>
+            <div class="hero-highlight-item">
+              <span class="icon"><img src="assets/icons/lightning.svg" class="icon-svg" alt=""></span>
+              <div class="title">En &lt; 1 Semana</div>
+              <div class="desc">Desarrollo ágil para que tu negocio empiece a recibir clientes de inmediato.</div>
+            </div>
+            <div class="hero-highlight-item">
+              <span class="icon"><img src="assets/icons/phone.svg" class="icon-svg" alt=""></span>
+              <div class="title">100% Mobile-First</div>
+              <div class="desc">Navegación ultra rápida optimizada para celulares y compras por WhatsApp.</div>
+            </div>
+            <div class="hero-highlight-item">
+              <span class="icon"><img src="assets/icons/palette.svg" class="icon-svg" alt=""></span>
+              <div class="title">Diseño Previo Gratis</div>
+              <div class="desc">Te presento una maqueta inicial gratuita adaptada a la identidad de tu marca.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       3. CASO DE ÉXITO REAL: LYDAM INDUMENTARIA (https://lydam.store/)
+       ======================================================================== -->
+  <section class="case-study-section" id="caso-lydam">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><img src="assets/icons/briefcase.svg" class="icon-svg" alt=""> Trabajo Real en Producción</span>
+        <h2 class="section-title">Caso de Éxito: LYDAM Indumentaria</h2>
+        <p class="section-subtitle">
+          Desarrollo y puesta en marcha de la plataforma web y catálogo mayorista online para la marca <strong>LYDAM</strong> (<a href="https://lydam.store/" target="_blank" rel="noopener" style="text-decoration: underline; font-weight: 700; color: #226796;">lydam.store</a>).
+        </p>
+      </div>
+
+      <div class="case-study-card">
+        <!-- Mockup Visual de LYDAM -->
+        <div class="case-study-preview">
+          <div class="case-mockup-window">
+            <div class="mockup-header">
+              <span class="window-dot" style="width:12px;height:12px;border-radius:50%;background:#fca5a5;display:inline-block;"></span>
+              <span class="window-dot" style="width:12px;height:12px;border-radius:50%;background:#fde047;display:inline-block;"></span>
+              <span class="window-dot" style="width:12px;height:12px;border-radius:50%;background:#93c5fd;display:inline-block;"></span>
+              <div class="mockup-url-bar">
+                <img src="assets/icons/lock.svg" class="icon-svg" alt=""> https://lydam.store/
+              </div>
+            </div>
+            <div class="mockup-body">
+              <h3 class="mockup-brand-title">LYDAM</h3>
+              <p class="mockup-tagline">TRIBAL UNDER COLLECTION</p>
+              <span class="mockup-badge-wholesale">VENTA MAYORISTA POR CURVA CERRADA</span>
+
+              <div class="mockup-grid-preview">
+                <div class="mockup-item">
+                  <div class="mockup-item-img"><img src="assets/icons/tshirt.svg" class="icon-svg" alt=""></div>
+                  <div class="mockup-item-title">Remeras Oversize</div>
+                  <div class="mockup-item-price">Curva completa (S a XL)</div>
+                </div>
+                <div class="mockup-item">
+                  <div class="mockup-item-img"><img src="assets/icons/hoodie.svg" class="icon-svg" alt=""></div>
+                  <div class="mockup-item-title">Buzos Urban Tribal</div>
+                  <div class="mockup-item-price">Catálogo & Totales Auto</div>
+                </div>
+              </div>
+
+              <a href="https://lydam.store/" target="_blank" rel="noopener" class="btn btn-blue" style="font-size: 0.9rem; padding: 10px 20px;">
+                <img src="assets/icons/globe.svg" class="icon-svg" alt=""> Explorar lydam.store en vivo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Información y Logros de LYDAM -->
+        <div class="case-study-info">
+          <span class="about-name-pill" style="margin-bottom: 12px;"><img src="assets/icons/sparkles.svg" class="icon-svg" alt=""> Plataforma Mayorista en Vivo</span>
+          <h3 class="case-title">Catálogo Dinámico & Flujo de Compra</h3>
+          <p class="case-description">
+            Diseñé y programé una solución completa y ligera pensada en mayoristas y revendedores de indumentaria, eliminando la fricción de compra y automatizando los pedidos directos por WhatsApp.
+          </p>
+
+          <ul class="case-achievements-list">
+            <li class="case-achievement-item">
+              <span class="case-check-icon"><img src="assets/icons/check.svg" class="icon-svg" alt="" style="width:16px;height:16px;"></span>
+              <div>
+                <strong>Diseño y maquetado responsivo (mobile-first):</strong> navegación ágil y fluida, enfocada en compras rápidas desde el smartphone de los clientes mayoristas.
+              </div>
+            </li>
+            <li class="case-achievement-item">
+              <span class="case-check-icon"><img src="assets/icons/check.svg" class="icon-svg" alt="" style="width:16px;height:16px;"></span>
+              <div>
+                <strong>Catálogo dinámico y curvas/talles:</strong> gestión inteligente de curvas cerradas, selección de prendas y cálculo automático de importes.
+              </div>
+            </li>
+            <li class="case-achievement-item">
+              <span class="case-check-icon"><img src="assets/icons/check.svg" class="icon-svg" alt="" style="width:16px;height:16px;"></span>
+              <div>
+                <strong>Integración con canales digitales:</strong> pedidos directos formateados a WhatsApp y enlaces de atención al cliente sin pasos engorrosos.
+              </div>
+            </li>
+            <li class="case-achievement-item">
+              <span class="case-check-icon"><img src="assets/icons/check.svg" class="icon-svg" alt="" style="width:16px;height:16px;"></span>
+              <div>
+                <strong>Optimización de rendimiento (UX/UI):</strong> carga veloz y adaptación multidispositivo perfecta.
+              </div>
+            </li>
+          </ul>
+
+          <div class="case-tech-tags">
+            <span class="skill-badge pink">HTML5 & CSS3</span>
+            <span class="skill-badge">Mobile-First</span>
+            <span class="skill-badge yellow">Catálogo Dinámico</span>
+            <span class="skill-badge pink">WhatsApp Checkout</span>
+            <span class="skill-badge">UX/UI Optimization</span>
+          </div>
+
+          <a href="https://lydam.store/" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top: 10px;">
+            <img src="assets/icons/link.svg" class="icon-svg" alt=""> Visitar lydam.store Oficial
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       4. SECCIÓN COMPARATIVA: 0% COMISIONES (Slide 2: Una Web simple y completa)
+       ======================================================================== -->
+  <section class="comparison-section" id="ventajas">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag blue"><img src="assets/icons/lightbulb.svg" class="icon-svg" alt=""> Inversión Inteligente para tu Negocio</span>
+        <h2 class="section-title">Una Web simple y completa</h2>
+        <p class="section-subtitle">
+          La página puede comenzar con una lista de accesos rápidos, similares a Linktree, pero sin tener que pagar suscripciones mensuales, integrando la identidad propia de tu negocio.
+        </p>
+      </div>
+
+      <div class="comparison-card">
+        <div class="comparison-intro">
+          <span class="comparison-intro-icon"><img src="assets/icons/sparkles.svg" class="icon-svg" alt=""></span>
+          <div class="comparison-intro-text">
+            <strong>¿Por qué no conviene regalar comisiones?</strong> Plataformas como TiendaNube o MiCatálogo te cobran comisiones por cada venta que hacés, además de costosos abonos mensuales fijos. Con mi desarrollo, hacés un <strong>solo pago único y muy accesible</strong>, y el 100% de tus ingresos queda en tu bolsillo.
+          </div>
+        </div>
+
+        <div class="comparison-table-wrapper">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th style="width: 32%;">Sección o Módulo</th>
+                <th>¿Cómo beneficia y potencia tu negocio?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="comparison-feature-title">
+                    <img src="assets/icons/shopping-bag.svg" class="icon-svg" alt=""> Tienda / Catálogo
+                  </div>
+                </td>
+                <td class="comparison-desc">
+                  Acceso directo a la web para adquirir los productos sin fricción, mostrando fotos, curvas, talles y precios transparentes.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="comparison-feature-title">
+                    <img src="assets/icons/pin.svg" class="icon-svg" alt=""> Ubicación
+                  </div>
+                </td>
+                <td class="comparison-desc">
+                  En caso de contar con tienda física o showroom, se indicará la dirección exacta con mapa interactivo de Google Maps y horarios.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="comparison-feature-title">
+                    <img src="assets/icons/phone.svg" class="icon-svg" alt=""> Redes Sociales
+                  </div>
+                </td>
+                <td class="comparison-desc">
+                  Links directos a todas sus redes sociales (Instagram, TikTok, Facebook) para mayor visibilidad y captación de clientes.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="comparison-feature-title">
+                    <img src="assets/icons/chat.svg" class="icon-svg" alt=""> Contacto
+                  </div>
+                </td>
+                <td class="comparison-desc">
+                  Comunicación directa e instantánea con su negocio a través de canales oficiales y WhatsApp listo para cerrar la venta.
+                </td>
+              </tr>
+              <tr class="comparison-highlight-row">
+                <td>
+                  <div class="comparison-feature-title">
+                    <img src="assets/icons/no-fee.svg" class="icon-svg" alt=""> 0 Comisiones
+                    <span class="comparison-badge-zero">¡Ahorro Real!</span>
+                  </div>
+                </td>
+                <td class="comparison-desc">
+                  <strong>Plataformas como TiendaNube, MiCatálogo, etc., cobran comisión por venta. Nosotros NO:</strong> un solo pago único por el desarrollo de su web y todas las ganancias son 100% tuyas.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       5. ETAPAS DE DESARROLLO (Slide 3: Etapas de su desarrollo)
+       ======================================================================== -->
+  <section class="steps-section" id="etapas">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag yellow"><img src="assets/icons/clipboard.svg" class="icon-svg" alt=""> Metodología Rápida y Transparente</span>
+        <h2 class="section-title">Etapas de su desarrollo</h2>
+        <p class="section-subtitle">
+          Trabajamos de forma clara y coordinada para que tengas tu sitio web funcionando en tiempo récord:
+        </p>
+      </div>
+
+      <div class="steps-grid">
+        <!-- Paso 1 -->
+        <div class="step-card">
+          <div class="step-number-box">01</div>
+          <h3 class="step-title">Diseño</h3>
+          <p class="step-desc">
+            Presentamos de forma <strong>gratuita</strong> un diseño para su web, adaptado al estilo, paleta y esencia de su marca.
+          </p>
+        </div>
+
+        <!-- Paso 2 -->
+        <div class="step-card">
+          <div class="step-number-box">02</div>
+          <h3 class="step-title">Aprobación</h3>
+          <p class="step-desc">
+            Luego de discutir cambios, opiniones y ajustes, la web queda 100% personalizada a su gusto.
+          </p>
+        </div>
+
+        <!-- Paso 3 -->
+        <div class="step-card">
+          <div class="step-number-box">03</div>
+          <h3 class="step-title">Desarrollo</h3>
+          <p class="step-desc">
+            Comienza el desarrollo de su web con código optimizado, maquetado responsivo mobile-first y máxima velocidad.
+          </p>
+        </div>
+
+        <!-- Paso 4 -->
+        <div class="step-card">
+          <div class="step-number-box">04</div>
+          <h3 class="step-title">Publicación</h3>
+          <p class="step-desc">
+            <strong>En menos de una semana</strong>, tiene su web publicada, con su dominio y lista para recibir pedidos.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       6. QUÉ PUEDE INCLUIR TU WEB (Slides 4 y 5: Principales de la web)
+       ======================================================================== -->
+  <section class="features-section" id="que-incluye">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><img src="assets/icons/laptop.svg" class="icon-svg" alt=""> La Web Completa</span>
+        <h2 class="section-title">Principales secciones de la web</h2>
+        <p class="section-subtitle">
+          Todas las secciones y módulos que puede contener tu página web para impulsar tus ventas:
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <!-- 01 Inicio -->
+        <div class="feature-window">
+          <div class="feature-window-header">
+            <div class="window-controls-pills">
+              <span class="pill-ctrl pink-pill" style="width:20px;"></span>
+              <span class="pill-ctrl" style="width:20px;"></span>
+            </div>
+            <span class="feature-num-badge">01</span>
+          </div>
+          <div class="feature-window-body">
+            <div class="feature-icon-circle"><img src="assets/icons/home.svg" class="icon-svg" alt=""></div>
+            <h3 class="feature-title">Inicio</h3>
+            <p class="feature-text">
+              Presentación de la marca, propuesta comercial, banners promocionales y exhibición de productos destacados.
+            </p>
+          </div>
+        </div>
+
+        <!-- 02 Catálogo -->
+        <div class="feature-window">
+          <div class="feature-window-header">
+            <div class="window-controls-pills">
+              <span class="pill-ctrl" style="width:20px;"></span>
+              <span class="pill-ctrl" style="width:20px;"></span>
+            </div>
+            <span class="feature-num-badge">02</span>
+          </div>
+          <div class="feature-window-body">
+            <div class="feature-icon-circle"><img src="assets/icons/box.svg" class="icon-svg" alt=""></div>
+            <h3 class="feature-title">Catálogo</h3>
+            <p class="feature-text">
+              Productos seccionados en categorías, con filtros por talles, curvas mayoristas, fotos de alta calidad y precios.
+            </p>
+          </div>
+        </div>
+
+        <!-- 03 Contacto -->
+        <div class="feature-window">
+          <div class="feature-window-header">
+            <div class="window-controls-pills">
+              <span class="pill-ctrl pink-pill" style="width:20px;"></span>
+              <span class="pill-ctrl" style="width:20px;"></span>
+            </div>
+            <span class="feature-num-badge">03</span>
+          </div>
+          <div class="feature-window-body">
+            <div class="feature-icon-circle"><img src="assets/icons/chat.svg" class="icon-svg" alt=""></div>
+            <h3 class="feature-title">Contacto</h3>
+            <p class="feature-text">
+              Información de contacto directa, formulario ágil y botón directo a WhatsApp para no perder ningún cliente.
+            </p>
+          </div>
+        </div>
+
+        <!-- 04 Panel Administración -->
+        <div class="feature-window">
+          <div class="feature-window-header">
+            <div class="window-controls-pills">
+              <span class="pill-ctrl" style="width:20px;"></span>
+              <span class="pill-ctrl" style="width:20px;"></span>
+            </div>
+            <span class="feature-num-badge">04</span>
+          </div>
+          <div class="feature-window-body">
+            <div class="feature-icon-circle"><img src="assets/icons/gear.svg" class="icon-svg" alt=""></div>
+            <h3 class="feature-title">Panel de Administración</h3>
+            <p class="feature-text">
+              Acceso privado para gestionar contenido, cargar nuevos artículos, pausar stock y actualizar precios con facilidad.
+            </p>
+          </div>
+        </div>
+
+        <!-- 05 Pedidos por WhatsApp -->
+        <div class="feature-window">
+          <div class="feature-window-header">
+            <div class="window-controls-pills">
+              <span class="pill-ctrl pink-pill" style="width:20px;"></span>
+              <span class="pill-ctrl" style="width:20px;"></span>
+            </div>
+            <span class="feature-num-badge">05</span>
+          </div>
+          <div class="feature-window-body">
+            <div class="feature-icon-circle"><img src="assets/icons/cart.svg" class="icon-svg" alt=""></div>
+            <h3 class="feature-title">Carrito por WhatsApp</h3>
+            <p class="feature-text">
+              Flujo de compra directo al celular del vendedor. Cero comisiones por transacción y respuesta inmediata al comprador.
+            </p>
+          </div>
+        </div>
+
+        <!-- 06 Redes & Ubicación -->
+        <div class="feature-window">
+          <div class="feature-window-header">
+            <div class="window-controls-pills">
+              <span class="pill-ctrl" style="width:20px;"></span>
+              <span class="pill-ctrl" style="width:20px;"></span>
+            </div>
+            <span class="feature-num-badge">06</span>
+          </div>
+          <div class="feature-window-body">
+            <div class="feature-icon-circle"><img src="assets/icons/pin.svg" class="icon-svg" alt=""></div>
+            <h3 class="feature-title">Redes & Mapa</h3>
+            <p class="feature-text">
+              Tu propio Linktree personalizado, integración con Instagram, TikTok y ubicación física con Google Maps.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       7. COTIZADOR INTERACTIVO (Herramienta para cerrar ventas)
+       ======================================================================== -->
+  <section class="calculator-section" id="cotizador">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag blue"><img src="assets/icons/sparkles.svg" class="icon-svg" alt=""> Presupuesto Personalizado Inmediato</span>
+        <h2 class="section-title">Cotizá tu página web</h2>
+        <p class="section-subtitle">
+          Elegí lo que necesitás para tu negocio y enviame tu configuración para recibir tu propuesta gráfica inicial sin cargo:
+        </p>
+      </div>
+
+      <div class="calc-container">
+        <div class="calc-card">
+          <div class="calc-header">
+            <h3 class="calc-title">Configurá tu Proyecto Web</h3>
+            <p class="calc-subtitle">Precios accesibles · 0% Comisiones · Entrega en menos de 7 días</p>
+          </div>
+
+          <div class="calc-body">
+            <!-- Paso 1: Tipo de Web -->
+            <div class="calc-step-group">
+              <div class="calc-step-label">
+                <span class="calc-step-num">1</span> Seleccioná el tipo de web:
+              </div>
+              <div class="calc-options-grid">
+                <div class="calc-option-card calc-type-option" data-type="Landing Page & Accesos Rápidos (Linktree propio)">
+                  <div class="calc-option-icon"><img src="assets/icons/link.svg" class="icon-svg" alt=""></div>
+                  <div class="calc-option-name">Landing / Bio Links</div>
+                  <div class="calc-option-desc">Ideal para redes sociales, presentación de marca y enlaces directos sin suscripción mensual.</div>
+                </div>
+
+                <div class="calc-option-card calc-type-option selected" data-type="Catálogo Mayorista / Productos">
+                  <div class="calc-option-icon"><img src="assets/icons/shopping-bag.svg" class="icon-svg" alt=""></div>
+                  <div class="calc-option-name">Catálogo de Productos</div>
+                  <div class="calc-option-desc">Perfecto para indumentaria, mayoristas o negocios con stock y pedidos directos a WhatsApp.</div>
+                </div>
+
+                <div class="calc-option-card calc-type-option" data-type="Tienda Online con Carrito">
+                  <div class="calc-option-icon"><img src="assets/icons/cart.svg" class="icon-svg" alt=""></div>
+                  <div class="calc-option-name">Tienda con Carrito</div>
+                  <div class="calc-option-desc">Cálculo de importes, opciones de entrega y cierre de compra al celular.</div>
+                </div>
+
+                <div class="calc-option-card calc-type-option" data-type="Sitio Web Institucional / Servicios">
+                  <div class="calc-option-icon"><img src="assets/icons/building.svg" class="icon-svg" alt=""></div>
+                  <div class="calc-option-name">Web Institucional</div>
+                  <div class="calc-option-desc">Para empresas, profesionales o prestadores de servicios que buscan transmitir confianza.</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Paso 2: Módulos deseados -->
+            <div class="calc-step-group">
+              <div class="calc-step-label">
+                <span class="calc-step-num">2</span> Elegí las funciones que querés incluir:
+              </div>
+              <div class="calc-options-grid">
+                <div class="calc-option-card calc-module-option selected" data-module="Catálogo seccionado en categorías">
+                  <div class="calc-option-icon"><img src="assets/icons/folder.svg" class="icon-svg" alt=""></div>
+                  <div class="calc-option-name">Categorías y Filtros</div>
+                  <div class="calc-option-desc">Organización clara de productos.</div>
+                </div>
+
+                <div class="calc-option-card calc-module-option selected" data-module="Pedidos directos por WhatsApp">
+                  <div class="calc-option-icon"><img src="assets/icons/chat.svg" class="icon-svg" alt=""></div>
+                  <div class="calc-option-name">Flujo WhatsApp</div>
+                  <div class="calc-option-desc">Pedidos directos sin comisiones.</div>
+                </div>
+
+                <div class="calc-option-card calc-module-option selected" data-module="Optimización mobile-first">
+                  <div class="calc-option-icon"><img src="assets/icons/phone.svg" class="icon-svg" alt=""></div>
+                  <div class="calc-option-name">Diseño Mobile-First</div>
+                  <div class="calc-option-desc">Rápido y adaptado a celulares.</div>
+                </div>
+
+                <div class="calc-option-card calc-module-option" data-module="Panel de administración para productos">
+                  <div class="calc-option-icon"><img src="assets/icons/key.svg" class="icon-svg" alt=""></div>
+                  <div class="calc-option-name">Panel Autogestionable</div>
+                  <div class="calc-option-desc">Cambiá precios y fotos vos mismo.</div>
+                </div>
+
+                <div class="calc-option-card calc-module-option" data-module="Mapa de ubicación y redes sociales">
+                  <div class="calc-option-icon"><img src="assets/icons/map.svg" class="icon-svg" alt=""></div>
+                  <div class="calc-option-name">Mapa y Redes Sociales</div>
+                  <div class="calc-option-desc">Google Maps y links a tus perfiles.</div>
+                </div>
+
+                <div class="calc-option-card calc-module-option" data-module="Configuración de dominio y hosting">
+                  <div class="calc-option-icon"><img src="assets/icons/globe.svg" class="icon-svg" alt=""></div>
+                  <div class="calc-option-name">Dominio y Publicación</div>
+                  <div class="calc-option-desc">Puesta en línea lista para usar.</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Resumen y Botón de Enviar a WhatsApp -->
+            <div class="calc-summary-box">
+              <div class="calc-summary-title">Tu configuración elegida:</div>
+              <p class="calc-summary-text" id="calcSummaryText">
+                Proyecto: Catálogo Mayorista / Productos con Catálogo seccionado en categorías, Pedidos directos por WhatsApp, Optimización mobile-first.
+              </p>
+              <a href="#" class="btn btn-primary" id="calcWhatsappBtn" target="_blank" rel="noopener">
+                <img src="assets/icons/whatsapp.svg" class="icon-svg" alt=""> Enviar mi selección por WhatsApp a Camila
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       8. CONTACTO & CIERRE (Recreación exacta del Slide 6: ¡Gracias!)
+       ======================================================================== -->
+  <section class="contact-section" id="contacto">
+    <div class="container">
+      <div class="contact-window-wrapper">
+
+        <!-- Teclas flotantes de teclado (Slide 6: Cmd, Ctrl, A, Z, C) -->
+        <button class="keyboard-key floating-key key-cmd" title="Tecla Cmd">Cmd</button>
+        <button class="keyboard-key yellow floating-key key-ctrl" title="Tecla Ctrl">Ctrl</button>
+        <button class="keyboard-key pink floating-key key-a" title="Tecla A">A</button>
+        <button class="keyboard-key floating-key key-z" title="Tecla Z">Z</button>
+        <button class="keyboard-key yellow floating-key key-c" title="Tecla C">C</button>
+
+        <!-- Ventana Principal de Contacto -->
+        <div class="contact-main-card">
+          <div class="contact-header-bar">
+            <div class="window-controls-pills">
+              <span class="pill-ctrl"></span>
+              <span class="pill-ctrl"></span>
+              <span class="pill-ctrl"></span>
+            </div>
+            <div class="window-title">
+              <img src="assets/icons/chat.svg" class="icon-svg" alt=""> contacto-directo.exe
+            </div>
+          </div>
+
+          <div class="contact-body">
+            <h2 class="contact-big-title">¡Gracias!</h2>
+            <p class="contact-tagline">¿Hablamos de tu web?</p>
+
+            <div class="contact-direct-info">
+              <!-- Teléfono / WhatsApp -->
+              <a href="https://wa.me/5191178189881?text=%C2%A1Hola%20Camila!%20Quisiera%20charlar%20sobre%20el%20desarrollo%20de%20mi%20web." 
+                 class="contact-link-pill js-whatsapp-direct" 
+                 target="_blank" 
+                 rel="noopener">
+                <img src="assets/icons/phone.svg" class="icon-svg" alt=""> +51 9 11 7818-9881
+              </a>
+
+              <!-- Email -->
+              <a href="mailto:Ianni.camila.c@gmail.com" class="contact-link-pill">
+                <img src="assets/icons/email.svg" class="icon-svg" alt=""> Ianni.camila.c@gmail.com
+              </a>
+            </div>
+
+            <div class="contact-buttons-group">
+              <a href="https://wa.me/5191178189881?text=%C2%A1Hola%20Camila!%20Vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20hacerte%20una%20consulta%20por%20una%20p%C3%A1gina%20web." 
+                 class="btn btn-primary js-whatsapp-direct" 
+                 target="_blank" 
+                 rel="noopener">
+                <img src="assets/icons/whatsapp.svg" class="icon-svg" alt=""> Iniciar Chat de WhatsApp
+              </a>
+              <a href="mailto:Ianni.camila.c@gmail.com?subject=Consulta%20por%20P%C3%A1gina%20Web" class="btn btn-pink">
+                <img src="assets/icons/email.svg" class="icon-svg" alt=""> Enviar un Correo
+              </a>
+            </div>
+
+            <p style="font-size: 1rem; color: var(--text-secondary); margin-bottom: 24px;">
+              <img src="assets/icons/gift.svg" class="icon-svg" alt=""> <em>Recordá que la propuesta gráfica inicial y el asesoramiento son 100% gratuitos y sin compromiso.</em>
+            </p>
+
+            <div class="contact-social-icons">
+              <a href="https://wa.me/5191178189881" target="_blank" rel="noopener" class="social-circle-btn" title="WhatsApp"><img src="assets/icons/whatsapp.svg" class="icon-svg" alt="WhatsApp"></a>
+              <a href="mailto:Ianni.camila.c@gmail.com" class="social-circle-btn" title="Email"><img src="assets/icons/email.svg" class="icon-svg" alt="Email"></a>
+              <a href="https://lydam.store/" target="_blank" rel="noopener" class="social-circle-btn" title="Ver caso LYDAM"><img src="assets/icons/dress.svg" class="icon-svg" alt="LYDAM"></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Pastel -->
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-copy">
+        © 2026 Camila Carolina Ianni · Desarrolladora Front-End · Escuela Da Vinci · Buenos Aires
+      </p>
+      <p class="footer-credits">
+        Diseñado con estética pastel retro-moderna · Precios accesibles y 0% comisiones por venta
+      </p>
+    </div>
+  </footer>
+
+  <!-- Modal para Visualizar Certificado Da Vinci en Grande -->
+  <div class="modal-backdrop" id="diplomaModal">
+    <div class="modal-content-wrapper">
+      <div class="modal-header">
+        <div class="window-title">
+          <img src="assets/icons/diploma.svg" class="icon-svg" alt=""> Certificado Oficial Escuela Da Vinci — Camila Carolina Ianni
+        </div>
+        <button class="modal-close-btn" id="modalCloseBtn" aria-label="Cerrar modal"><img src="assets/icons/close.svg" class="icon-svg" alt=""></button>
+      </div>
+      <div class="modal-body">
+        <img src="assets/images/diploma_davinci.png" alt="Diploma Da Vinci Desarrollador Front-End" class="modal-diploma-img">
+      </div>
+    </div>
+  </div>
+
+  <!-- Botón Flotante de WhatsApp (siempre accesible) -->
+  <a href="https://wa.me/5191178189881?text=%C2%A1Hola%20Camila!%20Vi%20tu%20portafolio%20y%20quiero%20cotizar%20mi%20p%C3%A1gina%20web." 
+     class="floating-whatsapp-btn js-whatsapp-direct" 
+     target="_blank" 
+     rel="noopener" 
+     aria-label="Hablar por WhatsApp">
+    <img src="assets/icons/whatsapp.svg" class="icon-svg" alt="WhatsApp" style="width:28px;height:28px;">
+    <span>¿Hablamos de tu web?</span>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
