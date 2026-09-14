@@ -6,7 +6,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   // Configuración de contacto
-  const WHATSAPP_NUMBER = '5191178189881'; // Formato internacional
+  const WHATSAPP_NUMBER = '5491178189881'; // Formato internacional
   const EMAIL_CONTACT = 'Ianni.camila.c@gmail.com';
 
   // 1. Menú Móvil y Tablets (Drawer & Backdrop)
